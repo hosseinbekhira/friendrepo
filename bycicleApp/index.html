@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Suivi de vélo</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" >
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"  />
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+        <link rel="stylesheet" href="css/indexmain.css"/>
+        <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" ></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="js/map.js"></script>
+    </head>
+    <style>
+        html, body { height: 100% }
+    </style>
+
+    <body onload="initialize()">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="info.html">
+                <i class="fas fa-biking iconbrand"></i>
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0 widthmain">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html"">Suivre les courreurs</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="tableuser.html">Liste des courreurs</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Historique des chutes</a>
+                  </li>
+
+                </ul>
+                <form class="d-flex">
+                   <button class="btn btn-danger" type="submit" id="btnlogout">Deconnexion</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div id="map" class="mapclass"></div>
+              </div>
+            </div>
+          </div>
+        
+        
+     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>  
+    <script src="js/logout.js"></script> 
+    </body>
+</html>

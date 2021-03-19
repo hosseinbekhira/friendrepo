@@ -1,0 +1,25 @@
+body {
+  background-color: #eee;
+}
+
+.iconbrand {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.widthmain {
+  width: 100%;
+}
+
+.box-info {
+  margin-top: 120px;
+  background-color: #009809;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.box-info p {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
